@@ -1,0 +1,47 @@
+SQL Homework
+(05/10/2019)
+
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_select
+_ all
+
+1. Write a sql query to fetch all records from table 'products' where
+'price' is 20 or 30
+
+	SELECT * FROM [Products] WHERE Price='20' OR Price='30'	
+
+2. Write a sql query to fetch all records from table 'products' where
+'productname' starts with 'T' and end with 'e'
+
+	SELECT * FROM [Products] WHERE ProductName LIKE'T%e'
+
+3. Write a sql query to fetch all records from table 'Categories'
+having CategoryId in descending order
+
+	SELECT * FROM [Categories] ORDER BY CategoryID DESC;
+
+4. Write a sql query to get an average of 'price' from table 'products'
+
+	SELECT AVG(Price) FROM [Products]
+
+5. Write a sql query to get the total number of records in table 'Orders' 
+
+	SELECT COUNT(OrderID) FROM [Orders]
+
+6. Write a sql query to get unique list of 'productname' from table 'products'
+
+	SELECT DISTINCT ProductName FROM [Products]
+
+7. Write a sql query to get 'unit' of product name 'Tofu' from table 'products'
+
+	SELECT Unit FROM [Products] WHERE Productname='Tofu'
+	
+
+
+8. Write a sql query to get sum of price of 'productid' being an odd
+number from table 'products'
+
+	SELECT SUM(ProductID) FROM [Products] WHERE (ProductID % 2 !=0);
+
+“Time is the longest distance between two places.”
+? Tennessee
+Williams
